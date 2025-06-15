@@ -1,113 +1,249 @@
+/* 
+   Beginner-friendly CSS for a cute Charity Water landing page
+   Uses Charity Water colors: blue (#1fdaef), yellow (#fdd835), white, and light blue (#eaf7f5)
+*/
+
+/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Set a soft background color for the whole page */
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f9f8;
+  /* ...existing code... */
+
+/* Set a sharp, skinny font for the whole page */
+body {
+    font-family: 'Montserrat', Arial, sans-serif; /* Use a modern, skinny font */
+    font-weight: 400; /* Normal weight for skinnier text */
+    background-color: #eaf7f5; /* Light blue background */
     color: #333;
-    padding: 20px;
+    padding: 0;
 }
 
-/* Hero Section */
-.hero {
-    background: url('https://dpmk.in/i/QD3mZVV2z8') center/cover no-repeat;
-    color: white;
+/* Make all headings a little skinnier too */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400; /* Normal weight for a skinny look */
+}
+
+/* Center and style the logo */
+.logo-container {
     text-align: center;
-    padding: 100px 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 120px;
+    border-radius: 50%; /* Makes the logo round */
+    box-shadow: 0 2px 8px #1fdaef;
+    background: #fff;
+    padding: 10px;
+}
+
+/* Hero Section with rounded corners and soft background */
+.hero {
+    background-color: #1fdaef;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto 25px auto;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 16px #1fdaef44;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    max-width: 700px;
+    font-size: 1.1rem;
+    max-width: 500px;
     margin: 0 auto;
 }
 
-/* Story Section */
+/* Story Section styled like a card */
 .story {
-    background-color: white;
-    padding: 60px 20px;
+    background-color: #fff;
+    color: #1fdaef;
     text-align: center;
+    padding: 30px 20px;
+    margin: 0 auto 25px auto;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px #1fdaef33;
 }
 
 .story h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
 
 .story p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1rem;
 }
 
-/* Impact Story Section */
+/* Impact Story Section with rounded card and image */
 .impact-story {
-    background-color: #eaf7f5;
-    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
     text-align: center;
+    padding: 30px 20px;
+    margin: 0 auto 25px auto;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px #1fdaef33;
 }
 
 .impact-story h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    color: #1fdaef;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .impact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .impact-image {
     max-width: 90%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 18px;
+    box-shadow: 0 2px 8px #fdd83588;
+    margin-bottom: 10px;
 }
 
-/* Call-to-Action Section */
+/* Call-to-Action Section with a cute button */
 .call-to-action {
-    background-color: #007c91;
-    color: white;
-    padding: 60px 20px;
+    background-color: #fdd835;
+    color: #1fdaef;
     text-align: center;
+    padding: 35px 20px;
+    margin: 0 auto 30px auto;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px #1fdaef33;
 }
 
 .call-to-action h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
 
 .call-to-action p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-bottom: 18px;
 }
 
+/* Style for the donate button */
 .donate-button {
-    background-color: #fdd835;
-    color: #000;
-    padding: 15px 30px;
+    background-color: #1fdaef; /* Blue background */
+    color: #fff;               /* White text */
+    padding: 14px 32px;
     border-radius: 30px;
     font-size: 1.1rem;
     text-decoration: none;
-    transition: background 0.3s ease;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    /* This makes color and size changes smooth */
+    transition: background 0.3s, transform 0.3s;
 }
 
+/* This makes the button change color and grow a little when hovered */
 .donate-button:hover {
-    background-color: #ffea00;
+    background-color: #13b6c8; /* Slightly darker blue */
+    transform: scale(1.05);    /* Make the button a little bigger */
+    cursor: pointer;           /* Show a pointer cursor */
+}
+
+/* Make the layout look good on phones and tablets */
+@media (max-width: 600px) {
+    /* This makes the cards and hero section fill most of the screen on small devices */
+    .hero,
+    .story,
+    .impact-story,
+    .call-to-action {
+        width: 98%;
+        padding: 20px 5px;
+    }
+    .logo {
+        max-width: 80px;
+    }
+}
+/* ...existing code... */
+
+/* Contact Us section styled to match Charity Water colors */
+.contact-form {
+    text-align: center;           /* Center all text and form elements */
+    margin: 30px auto 0 auto;     /* Center the section and add space above */
+    width: 90%;                   /* Not too wide on big screens */
+    max-width: 400px;             /* Maximum width for readability */
+    padding: 20px;                /* Space inside the section */
+    background-color: #eaf7f5;    /* Light blue background to match theme */
+    border-radius: 20px;          /* Rounded corners for a friendly look */
+    box-shadow: 0 2px 8px #1fdaef33; /* Soft blue shadow for a card effect */
+}
+
+/* Style the heading to match other headings */
+.contact-form h2 {
+    color: #1fdaef;               /* Charity Water blue */
+    margin-bottom: 15px;
+    font-weight: 400;             /* Skinny font */
+}
+
+/* Center and style the form fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    display: block;               /* Each input on its own line */
+    margin: 10px auto;            /* Center each input horizontally */
+    width: 80%;                   /* Make inputs a bit wider */
+    padding: 8px;                 /* Add space inside the inputs */
+    border-radius: 8px;           /* Rounded corners for inputs */
+    border: 1px solid #1fdaef;    /* Light blue border */
+    background-color: #fff;       /* White background for inputs */
+    color: #333;                  /* Dark text for readability */
+}
+
+/* Style the submit button to match the theme */
+.contact-form input[type="submit"] {
+    background-color: #fdd835;    /* Charity Water yellow */
+    color: #1fdaef;               /* Blue text for contrast */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ffe066;    /* Lighter yellow on hover */
+}
+/* Adds extra space above the footer to lower it on the page */
+.footer {
+    background-color: #1fdaef; /* Charity Water blue */
+    color: #fff;               /* White text for contrast */
+    text-align: center;        /* Center the text */
+    padding: 16px 0;           /* Space above and below the text */
+    margin-top: 60px;          /* More space above the footer to lower it */
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+    font-size: 1rem;           /* Easy-to-read text */
+}
+/* ...existing code... */

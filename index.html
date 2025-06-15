@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Add this line to the <head> section to load Montserrat font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Charity Water Landing Page</title>
+    <!-- Link to the CSS file for styling -->
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- Logo at the top, centered -->
+    <div class="logo-container">
+        <img src="cw.logo.png" alt="Charity Water Logo" class="logo" />
+    </div>
+
+    <!-- Hero Section with a rounded box and soft background -->
     <section class="hero">
         <h1>Your Voice, Your Impact, Their Future</h1>
-        <p>Be part of the generation creating change, your support means clean water and brighter futures tomorrow.</p>
+        <p>Be part of the generation creating change. Your support means clean water and brighter futures tomorrow.</p>
     </section>
 
-    <!-- Story Section -->
+    <!-- Story Section with a card style -->
     <section class="story">
         <h2>Our Story</h2>
         <p>
-            Charity Water was founded to bring clean, safe drinking water to people in developing countries. We believe in transparency, sustainability, and the power of community. Every donation goes directly to fund water projects around the world.
+            Charity Water was founded to bring clean, safe drinking water to people in developing countries. We believe in transparency, sustainability, and the power of community.
         </p>
     </section>
 
-    <!-- Impact Story Section -->
+    <!-- Impact Story Section with image and rounded card -->
     <section class="impact-story">
         <h2>Real Impact: Meet Amina</h2>
         <div class="impact-content">
-            <img src="https://dpmk.in/i/QD3mZVV2z8" alt="Men Standing Proud For a Job Well Done, Bringing Fresh Drinking Water to Those in Need" class="impact-image" />
+            <img src="https://dpmk.in/i/QD3mZVV2z8" alt="Amina's Story" class="impact-image" />
             <p>
                 Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
             </p>
         </div>
     </section>
 
-    <!-- Call-to-Action Section -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+    <!-- Call-to-Action Section with a cute button -->
+   <!-- ...existing code... -->
+<section class="call-to-action">
+    <h2>Make a Difference</h2>
+    <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+    <!-- This button now takes people to the real donation page -->
+    <a href="https://www.charitywater.org/donate" class="donate-button" target="_blank">💧 Donate Now</a>
+    <!-- Simple contact form for practice -->
+</section>
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Send">
+    </form>
+    <!-- Footer at the bottom of the page -->
+<footer class="footer">
+    <p>&copy; 2025 Charity Water. All rights reserved.</p>
+</footer>
+</section>
+<!-- ...existing code... -->
 </body>
 </html>
